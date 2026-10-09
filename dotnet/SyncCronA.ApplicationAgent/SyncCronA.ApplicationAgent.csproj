@@ -24,7 +24,7 @@
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
         <PackageReference Include="Google.Protobuf" Version="3.28.0" />
         <PackageReference Include="Grpc.Net.Client" Version="2.64.0"/>
-        <PackageReference Include="SyncCronA.Contracts" Version="0.0.1" />
+        <PackageReference Include="SyncCronA.Contracts" Version="0.0.1-rc.1" />
     </ItemGroup>
 
     <ItemGroup>

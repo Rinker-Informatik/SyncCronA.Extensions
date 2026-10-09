@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
-    <PackageReference Include="SyncCronA.Contracts" Version="0.0.1" />
+    <PackageReference Include="SyncCronA.Contracts" Version="0.0.1-rc.1" />
   </ItemGroup>
 
   <ItemGroup>
