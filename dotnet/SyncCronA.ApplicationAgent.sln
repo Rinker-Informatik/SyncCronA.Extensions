@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncCronA.ApplicationAgent", "SyncCronA.ApplicationAgent\SyncCronA.ApplicationAgent.csproj", "{C4F4EE20-54D4-4F77-BB35-825F1FD8B807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncCronA.ApplicationAgent.Tests.WebApi", "SyncCronA.ApplicationAgent.Tests\TestWebApi\SyncCronA.ApplicationAgent.Tests.WebApi.csproj", "{38F98950-4131-4FA4-AB13-352282777ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncCronA.ApplicationAgent.Unittests", "SyncCronA.ApplicationAgent.Unittests\SyncCronA.ApplicationAgent.Unittests.csproj", "{E1EB128B-BF88-4905-BEEF-1484D5917FE3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4F4EE20-54D4-4F77-BB35-825F1FD8B807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F4EE20-54D4-4F77-BB35-825F1FD8B807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4F4EE20-54D4-4F77-BB35-825F1FD8B807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F4EE20-54D4-4F77-BB35-825F1FD8B807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F98950-4131-4FA4-AB13-352282777ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F98950-4131-4FA4-AB13-352282777ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F98950-4131-4FA4-AB13-352282777ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F98950-4131-4FA4-AB13-352282777ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1EB128B-BF88-4905-BEEF-1484D5917FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1EB128B-BF88-4905-BEEF-1484D5917FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1EB128B-BF88-4905-BEEF-1484D5917FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1EB128B-BF88-4905-BEEF-1484D5917FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
