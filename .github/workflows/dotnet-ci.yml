@@ -1,0 +1,34 @@
+name: .NET CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Clean
+        run: dotnet clean dotnet/SyncCronA.ApplicationAgent.sln --configuration Release
+
+      - name: Restore
+        run: dotnet restore dotnet/SyncCronA.ApplicationAgent.sln
+
+      - name: Build
+        run: dotnet build dotnet/SyncCronA.ApplicationAgent.sln --configuration Release --no-restore -p:ContinuousIntegrationBuild=true
+
+      - name: Test
+        run: dotnet test dotnet/SyncCronA.ApplicationAgent.Unittests/SyncCronA.ApplicationAgent.Unittests.csproj --configuration Release --no-build --no-restore
