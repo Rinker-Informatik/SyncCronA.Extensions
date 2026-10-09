@@ -18,8 +18,8 @@ jobs:
         id: tag
         shell: bash
         run: |
-          if [[ ! "$GITHUB_REF_NAME" =~ ^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]; then
-            echo "Expected a tag such as v1.2.3" >&2
+          if [[ ! "$GITHUB_REF_NAME" =~ ^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(-[0-9A-Za-z-]+(\.[0-9A-Za-z-]+)*)?$ ]]; then
+            echo "Expected a tag such as v1.2.3 or v1.2.3-rc.1" >&2
             exit 1
           fi
           echo "package_version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
